@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tricentis" parallel="methods" thread-count="4">
+	<listeners>
+		<listener class-name="listener.AnnotationTransformer" />
+	</listeners>
+	
+	<test name="Test">
+		<packages>
+			<package name="tricentis" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Tricentis -->

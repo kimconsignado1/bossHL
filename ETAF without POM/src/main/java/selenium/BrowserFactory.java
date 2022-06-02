@@ -50,7 +50,7 @@ public class BrowserFactory {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(ConfigReader.getIntProps("pageLoadTimeout"), TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(ConfigReader.getIntProps("implicitlyWait"), TimeUnit.SECONDS);
 
